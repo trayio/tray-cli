@@ -1,6 +1,6 @@
 {
 	"name": "@trayio/cli",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "A collection of CLI commands for the tray platform",
 	"main": "./dist/index.js",
 	"scripts": {
@@ -31,7 +31,7 @@
 	"dependencies": {
 		"colors": "^1.4.0",
 		"commander": "^5.0.0",
-		"generator-trayio-nodejs-connector": "^3.0.0",
+		"generator-trayio-nodejs-connector": "^3.0.1",
 		"inquirer": "^7.1.0",
 		"lodash": "^4.17.15",
 		"mustache": "^4.0.1",
