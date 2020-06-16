@@ -1,6 +1,6 @@
 {
 	"name": "@trayio/cli",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "A collection of CLI commands for the tray platform",
 	"main": "./dist/index.js",
 	"scripts": {
@@ -35,11 +35,13 @@
 		"inquirer": "^7.1.0",
 		"lodash": "^4.17.15",
 		"mustache": "^4.0.1",
+		"nodemon": "^2.0.4",
 		"pkg-dir": "^4.2.0",
 		"spell-checker-js": "^1.2.6",
 		"yeoman-environment": "^2.10.3"
 	},
 	"devDependencies": {
+		"@types/nodemon": "^1.19.0",
 		"@types/mustache": "^4.0.1",
 		"@types/inquirer": "^6.5.0",
 		"@types/jest": "^25.2.1",

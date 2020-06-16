@@ -3,7 +3,7 @@ import { Command } from 'commander';
 import colors from 'colors';
 import spell from 'spell-checker-js';
 import getInput from './getInput';
-import { getConnectorName } from '../../../utils';
+import { getConnectorName, getConnectorRootDirectory } from '../../../utils';
 import { generateModel, generateSchema, generateDdl } from './templates';
 
 spell.load('en');
@@ -30,11 +30,12 @@ function validateSpelling(text: string) {
 
 const addOperation = async () => {
   const connectorName = getConnectorName();
+  const packageRootDir = getConnectorRootDirectory();
 
   const config = await getInput();
 
   config.connectorName = connectorName;
-  const connectorFolder = `connectors/${connectorName}`;
+  const connectorFolder = `${packageRootDir}/connectors/${connectorName}`;
 
   // Create needed folders
   const foldersNeeded = [`${connectorFolder}/${config.operationName}`];

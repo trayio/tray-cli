@@ -19,4 +19,9 @@ Use this command for generating a boilerplate connector.
 
 This command is used for generating scaffolding for new operations.
 
+### Run connector `tray connector run`
+
+Runs a local development server that can be used to test a connector.
+Restarts when changes are made.
+
 To use it, just run the command, and it will guide you through the process with a dynamic input form.
